@@ -10,7 +10,7 @@ function buttonclick(value) {
     } else {
         handlenumber(value);
     }
-    
+    screen.innerText=buffer;
 }
 
 function handlesymbol(symbol) {
@@ -25,7 +25,7 @@ function handlenumber(numberString) {
     } else{
         buffer=buffer+numberString;
     }
-    screen.innerText=buffer;
+
 }
 console.log(buffer);
 
