@@ -19,6 +19,15 @@ function handlesymbol(symbol) {
             buffer = "0";
             runningtotal = 0;
             break;
+        case '=':
+            if (previousOperator===null) {
+                return;
+            }
+            flushoperation(parseInt(buffer));
+            previousOperator=null;
+            buffer=runningtotal;
+            runningtotal=0;
+            break;
         case '+':
         case '-':
         case '&times;':
@@ -29,10 +38,29 @@ function handlesymbol(symbol) {
 }
 function handlemath(symbol){
     if (buffer==='0') {
-        return;
+        return ;
         
     }
-
+    const intBuffer = parseInt (buffer);
+    if (runningtotal=== 0) {
+        runningtotal=intBuffer;
+    } else{
+        flushoperation(intBuffer);
+    }
+    previousOperator=symbol;
+    buffer='0';
+}
+function flushoperation(intBuffer) {
+    if (previousOperator==='+') {
+        runningtotal+=intBuffer;
+        
+    } else if (previousOperator==='-') {
+        runningtotal-=intBuffer;
+    }else if (previousOperator==='&times') {
+        runningtotal*=intBuffer;
+    }else {
+        runningtotal/=intBuffer;
+    }
 }
 function handlenumber(numberString) {
 
