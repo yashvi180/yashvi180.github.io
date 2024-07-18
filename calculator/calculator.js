@@ -14,12 +14,28 @@ function buttonclick(value) {
 }
 
 function handlesymbol(symbol) {
-    if (symbol==='C') {
-        buffer='0';
-        runningtotal=0;
+    switch (symbol) {
+        case 'C':
+            buffer = "0";
+            runningtotal = 0;
+            break;
+        case '+':
+        case '-':
+        case '&times;':
+        case '&divide;':
+            handlemath(symbol);
+            break;
+        }
+}
+function handlemath(symbol){
+    if (buffer==='0') {
+        return;
+        
     }
+
 }
 function handlenumber(numberString) {
+
     if(buffer==='0'){
         buffer=numberString;
     } else{
