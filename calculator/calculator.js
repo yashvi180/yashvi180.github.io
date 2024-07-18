@@ -13,7 +13,12 @@ function buttonclick(value) {
     
 }
 
-function handlesymbol(symbol) {}
+function handlesymbol(symbol) {
+    if (symbol==='C') {
+        buffer='0';
+        runningtotal=0;
+    }
+}
 function handlenumber(numberString) {
     if(buffer==='0'){
         buffer=numberString;
