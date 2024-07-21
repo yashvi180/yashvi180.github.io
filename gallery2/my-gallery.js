@@ -9,8 +9,11 @@ nextEl: ".swiper-button-next",
 prevEl: ".swiper-button-prev"
 }
 });
-const { styler, spring, listen, pointer, value } = window.popmotion;
 
+const { styler, spring, listen, pointer, value } = window.popmotion;
+const person = {name1: "brian", job:"engineer"};
+const{name1}= person;
+console.log(name1)
 const ball = document.querySelector('.brand');
 const divStyler = styler(ball);
 const ballXY = value({ x: 0, y: 0 }, divStyler.set);
