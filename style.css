@@ -1,9 +1,12 @@
 a {
-    color: rgb(143, 95, 163);
+    color: rgb(165, 88, 131);
     font-weight: bold;
     
 }
 h1 {
-    color: rgb(98, 66, 27);
+    color: rgb(170, 152, 22);
     text-align: center;
+}
+body {
+    background-color: rgb(141, 126, 107);
 }
