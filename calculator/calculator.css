@@ -25,7 +25,7 @@ body {
     padding: 20px 5px;
     font-size: 40px;
 }
-.cacl-button {
+.calc-button {
   background-color: #d8d9db;  
   color: black;
   border: none;
@@ -33,10 +33,10 @@ body {
   height: 100px;
   flex-basis: 24.5%;
 }
-.cacl-button:hover {
+.calc-button:hover {
     background-color: #ebebeb;
 }
-.cacl-button:active {
+.calc-button:active {
     background-color: #bbbcbe;
 }
 .double {
@@ -45,11 +45,11 @@ body {
 .triple {
     flex-basis: 74.8%;
 }
-.cacl-button:last-child {
+.calc-button:last-child {
     background-color: #df974c;
     color: white;
 }
-.cacl-button:last-child:hover {
+.calc-button:last-child:hover {
     background-color: #dfb07e;
 }
 

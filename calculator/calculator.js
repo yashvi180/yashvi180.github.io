@@ -4,16 +4,17 @@ let buffer = "0";
 let previousOperator;
 const screen = document.querySelector('.screen');
 function buttonclick(value) {
+    console.log("I am inside button click")
     if (isNaN (value)) {
 
-        handlesymbol(value);
+        handleSymbol(value);
     } else {
-        handlenumber(value);
+        handleNumber(value);
     }
     screen.innerText=buffer;
 }
 
-function handlesymbol(symbol) {
+function handleSymbol(symbol) {
     switch (symbol) {
         case 'C':
             buffer = "0";
@@ -62,11 +63,13 @@ function flushoperation(intBuffer) {
         runningtotal/=intBuffer;
     }
 }
-function handlenumber(numberString) {
-
+function handleNumber(numberString) {
+console.log(numberString)
     if(buffer==='0'){
+        console.log("inside if statement")
         buffer=numberString;
     } else{
+        console.log("inside else statement")
         buffer=buffer+numberString;
     }
 
@@ -74,7 +77,8 @@ function handlenumber(numberString) {
 console.log(buffer);
 
 function init() {
-    document.querySelector('.cacl-buttons');
+    console.log("inside init");
+    document.querySelector('.calc-button').
     addEventListener('click', function (event) {
         buttonclick
         (event.target.innerText);

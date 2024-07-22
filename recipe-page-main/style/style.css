@@ -10,7 +10,7 @@ body {
   margin: 3rem auto;
   padding: 20px;
   background-color: white; 
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 h1 {
@@ -25,13 +25,11 @@ p {
 
 ul,
 ol { 
-  list-style-type: none;
   margin: 0; 
   padding: 0; 
 }
 
-ul li,
-ol li { 
+ li { 
   margin-bottom: 10px;
   color: #333; 
 }
