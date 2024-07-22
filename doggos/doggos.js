@@ -11,6 +11,6 @@ function addDoggo() {
         document.querySelector('.doggo' ).appendChild(img);
       })
 }
-document.querySelector('.add-doggo').addEventListener("click",addDoggo)
+document.querySelector('.add-doggo').addEventListener("click",addDoggo);
 
   
