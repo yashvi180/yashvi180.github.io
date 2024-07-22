@@ -1,3 +1,9 @@
-body {
-
+a {
+    color: rgb(143, 95, 163);
+    font-weight: bold;
+    
+}
+h1 {
+    color: rgb(98, 66, 27);
+    text-align: center;
 }
