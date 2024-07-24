@@ -87,8 +87,8 @@ h1,h2 {
 }
 
 .x {
-  background-color: hsl(330, 100%, 98%);
-  border-radius: 10px;
+  background-color: hsl(330, 100%, 95%);
+  border-radius: 12px;
   
 }
 img {
@@ -97,6 +97,9 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+h2 {
+  color: hsl(14, 45%, 36%)
 }
 
 
