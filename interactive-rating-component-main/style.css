@@ -12,8 +12,7 @@ body {
   border-radius: 8px;
   padding: 20px;
   text-align: center;
-  align-items: center;
-  justify-content: center;
+
 }
 
 .rating-header {
@@ -68,4 +67,8 @@ body {
   padding: 10px 20px;
   margin-top: 20px;
   cursor: pointer;
+
+}
+.para{
+    text-align: left;
 }
