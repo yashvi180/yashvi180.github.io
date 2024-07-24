@@ -31,8 +31,8 @@ function handleSymbol(symbol) {
             break;
         case '+':
         case '-':
-        case '&times;':
-        case '&divide;':
+        case 'X;':
+        case '/':
             handlemath(symbol);
             break;
         }
@@ -57,7 +57,7 @@ function flushoperation(intBuffer) {
         
     } else if (previousOperator==='-') {
         runningtotal-=intBuffer;
-    }else if (previousOperator==='&times') {
+    }else if (previousOperator==='X') {
         runningtotal*=intBuffer;
     }else {
         runningtotal/=intBuffer;
@@ -77,13 +77,8 @@ console.log(numberString)
 console.log(buffer);
 
 function init() {
-    console.log("inside init");
-    document.querySelector('.calc-button').
-    addEventListener('click', function (event) {
-        buttonclick
-        (event.target.innerText);
-        
+    document.querySelector('.calc-buttons').addEventListener('click', function (event) {
+        buttonclick(event.target.innerText);
     });
-
 }
 init();
