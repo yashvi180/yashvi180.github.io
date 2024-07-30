@@ -31,7 +31,7 @@ function handleSymbol(symbol) {
             break;
         case '+':
         case '-':
-        case 'X;':
+        case '×':
         case '/':
             handlemath(symbol);
             break;
@@ -57,7 +57,7 @@ function flushoperation(intBuffer) {
         
     } else if (previousOperator==='-') {
         runningtotal-=intBuffer;
-    }else if (previousOperator==='X') {
+    }else if (previousOperator==='×') {
         runningtotal*=intBuffer;
     }else {
         runningtotal/=intBuffer;

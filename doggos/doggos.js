@@ -32,12 +32,14 @@ fetch(BREEDS_URL)
       select.appendChild(option);
     }
   });
-select.addEventListener("change", function (event) {
+
+  select.addEventListener("change", function (event) {
   let url = `https://dog.ceo/api/breed/${event.target.value}/images/random`;
   getNewDoggo(url);
 });
 const img = document.querySelector(".dog-img");
-const spinner =document.querySelector(".spinner");
+const spinner = document.querySelector(".spinner");
+
 function getNewDoggo(url) {
   spinner.classList.add("show");
   img.classList.remove("show");
@@ -45,14 +47,15 @@ function getNewDoggo(url) {
     .then(function (res) {
       return res.json();
     })
-    .then(function (res) {
+    .then(function (data) {
       img.src = data.message;
+      console.log(data.message)
       //spinner.classList.remove("show")
-     // img.classList.add("show");
+      // img.classList.add("show");
     });
 }
-img.addEventListener("load",function(){
-  spinner.classList.remove("show")
-  img.classList.add("show");
 
-})
+img.addEventListener("load", function () {
+  spinner.classList.remove("show");
+  img.classList.add("show");
+});

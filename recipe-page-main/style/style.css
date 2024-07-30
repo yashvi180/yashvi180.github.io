@@ -74,6 +74,7 @@ td {
 
 .t1 {
   color:hsl(332, 51%, 32%);
+  background-color:hsl(330, 100%, 94%);
 }
 
 .b {
@@ -87,7 +88,7 @@ h1,h2 {
 }
 
 .x {
-  background-color: hsl(330, 100%, 95%);
+  background-color:hsl(330, 100%, 94%);
   border-radius: 12px;
   
 }
