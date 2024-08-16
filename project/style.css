@@ -19,7 +19,7 @@ body {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     flex-direction: column;
     align-items:
  center;
@@ -33,14 +33,17 @@ h1 {
 .add-budget, .add-expense {
     width: 100%;
     margin-bottom: 20px;
-    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #fff;
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0; 
+    padding: 10px 20px;
+    
 }
 
 .expense-history {
-    width: 50%;
+    width: 100%;
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -48,6 +51,7 @@ h1 {
     background-color: #fff;
     display: flex;
     flex-direction:column;
+margin-left: 100px;
 
 }
 
@@ -91,6 +95,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    width:55%;
+    
 }
 .add-budget, .add-expense, .expense-history {
     flex: 1;
@@ -109,3 +115,19 @@ h1 {
     justify-content: space-between;
     width: 100%;
 }
+.add-budget label, .add-expense label {
+    flex: 1;
+    margin-right: 10px;
+}
+.add-budget button, .add-expense button {
+    background-color: #1424d9; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-expense button {
+    align-self: flex-end; 
+  }
+
