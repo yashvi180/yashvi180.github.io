@@ -58,6 +58,7 @@ box-shadow: -1px 4px 15px -1px rgba(117,113,117,0.93);
 }
 
 .expense-history table {
+    width:100%;
   border-collapse: collapse;
 }
 .expense-history-summary {
@@ -85,14 +86,14 @@ box-shadow: -1px 4px 15px -1px rgba(117,113,117,0.93);
   background-color: rgba(233, 48, 76, 0.946);
   border-radius: 5px;
   font-size: large;
-  width: 100%;
+  max-width: 100%;
 }
 .combined {
   display: flex;
   /* justify-content: space-between; */
   /* flex-direction: row-reverse; */
   /* width: 75%; */
-  height: 100%;
+  min-height: 100%;
   flex-grow: 3;
   -webkit-box-shadow: -1px 4px 15px -1px rgba(117,113,117,0.93);
 -moz-box-shadow: -1px 4px 15px -1px rgba(117,113,117,0.93);
@@ -120,10 +121,10 @@ box-shadow: -1px 4px 15px -1px rgba(117,113,117,0.93);
 }
 .content {
   display: flex;
-  height: 100%;
+  min-height: 100%;
   align-items: start;
   gap: 15px;
-  width:100%;
+  max-width:100%;
 }
 .add-budget label,
 .add-expense label {
@@ -136,7 +137,7 @@ box-shadow: -1px 4px 15px -1px rgba(117,113,117,0.93);
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  width: 100%;
+  max-width: 100%;
   padding: 8px;
   font-size: 16px;
 }
@@ -163,4 +164,9 @@ h2 {
     font-weight:lighter;
     color: #202020f0;
     font-family: Arial, Helvetica, sans-serif;
+}
+.table-wrapper {
+    height:400px;
+    overflow: auto;
+
 }
